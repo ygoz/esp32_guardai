@@ -1,0 +1,14 @@
+# ESP-IDF build output
+build/
+sdkconfig
+
+# PlatformIO
+.pio/
+
+# VS Code generated files
+.vscode/.browse.c_cpp.db*
+.vscode/ipch
+
+# OS
+.DS_Store
+Thumbs.db
