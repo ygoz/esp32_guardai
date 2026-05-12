@@ -4,12 +4,12 @@
         {
             "label": "Build",
             "type": "shell",
-            "command": "idf.py",
-            "args": ["build"],
+            "command": "C:\\esp\\v6.0.1\\esp-idf\\export.bat && idf.py build",
             "options": {
                 "cwd": "${workspaceFolder}",
-                "env": {
-                    "IDF_PATH": "C:\\esp\\v6.0.1\\esp-idf"
+                "shell": {
+                    "executable": "cmd.exe",
+                    "args": ["/d", "/c"]
                 }
             },
             "group": {
@@ -25,12 +25,12 @@
         {
             "label": "Build & Flash",
             "type": "shell",
-            "command": "idf.py",
-            "args": ["build", "flash"],
+            "command": "C:\\esp\\v6.0.1\\esp-idf\\export.bat && idf.py build flash",
             "options": {
                 "cwd": "${workspaceFolder}",
-                "env": {
-                    "IDF_PATH": "C:\\esp\\v6.0.1\\esp-idf"
+                "shell": {
+                    "executable": "cmd.exe",
+                    "args": ["/d", "/c"]
                 }
             },
             "group": "build",
@@ -43,12 +43,12 @@
         {
             "label": "Flash",
             "type": "shell",
-            "command": "idf.py",
-            "args": ["flash"],
+            "command": "C:\\esp\\v6.0.1\\esp-idf\\export.bat && idf.py flash",
             "options": {
                 "cwd": "${workspaceFolder}",
-                "env": {
-                    "IDF_PATH": "C:\\esp\\v6.0.1\\esp-idf"
+                "shell": {
+                    "executable": "cmd.exe",
+                    "args": ["/d", "/c"]
                 }
             },
             "group": "build",
@@ -61,12 +61,12 @@
         {
             "label": "Monitor",
             "type": "shell",
-            "command": "idf.py",
-            "args": ["monitor"],
+            "command": "C:\\esp\\v6.0.1\\esp-idf\\export.bat && idf.py monitor",
             "options": {
                 "cwd": "${workspaceFolder}",
-                "env": {
-                    "IDF_PATH": "C:\\esp\\v6.0.1\\esp-idf"
+                "shell": {
+                    "executable": "cmd.exe",
+                    "args": ["/d", "/c"]
                 }
             },
             "group": "build",
